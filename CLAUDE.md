@@ -10,6 +10,33 @@ This repository manages the content overhaul of BYU-Idaho's GenAI website (<www.
 - Current-State/: FireCrawl webcrawl of the existing GenAI site (Markdown)
 - Future-State/: New web content (Markdown) to be sent to University Communications for publishing in Brightspot CMS
 
+### Directory Tree
+
+```
+BYUI-GenAI-Site/
+├── .claude/
+│   └── settings.local.json
+├── .gitignore
+├── CHANGELOG.md
+├── CLAUDE.md
+├── Current-State/
+│   ├── about.md
+│   ├── academic-integrity.md
+│   ├── ai-in-academics.md
+│   ├── ai-in-the-syllabus.md
+│   ├── connectors.md
+│   ├── copyright.md
+│   ├── custom-bots.md
+│   ├── grading-with-ai.md
+│   ├── home.md
+│   ├── navbar.md
+│   ├── privacy.md
+│   ├── products.md
+│   └── training.md
+└── Future-State/
+    └── (empty - content to be authored)
+```
+
 ### What's In Scope
 
 - Content: rewriting, restructuring, removing outdated/inaccurate material
