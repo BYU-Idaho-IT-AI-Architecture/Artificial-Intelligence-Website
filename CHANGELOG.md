@@ -13,3 +13,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Current-State/ directory with FireCrawl webcrawl of existing GenAI site (13 pages)
 - Future-State/ directory (empty, awaiting new content)
 - Git conventions and changelog maintenance instructions in CLAUDE.md
+- File mapping table in CLAUDE.md linking Current-State files to Future-State targets
+- Progress tracking table in CLAUDE.md for content authoring status
+
+### Removed
+- Design document (docs/plans/2026-02-26-claude-md-design.md)
