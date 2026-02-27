@@ -29,6 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 - Tools table: moved tool-specific data protection notes into a new "Note" column with links to login guides
+- Tools table: Access links now point to login guide pages instead of external tool URLs
 
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)

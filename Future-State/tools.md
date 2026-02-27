@@ -4,9 +4,9 @@ BYU-Idaho provides access to the following approved generative AI tools. Each to
 
 | Tool | Provider | Approved Data Levels | Note | Access |
 | --- | --- | --- | --- | --- |
-| ChatGPT Edu (CES) | OpenAI | Public, Internal, PII | Requires [CES Edu license](/genai/chatgpt-login). Personal accounts have no data protections. | [Access ChatGPT](https://chatgpt.com) |
-| Copilot | Microsoft | Public, Internal | Must use [institutional account (Work experience)](/genai/copilot-login). Personal accounts have no data protections. | [Access Copilot](https://copilot.microsoft.com) |
-| Gemini | Google | Public, Internal | Must use [institutional Google account](/genai/gemini-login). Personal accounts have no data protections. | [Access Gemini](https://gemini.google.com) |
+| ChatGPT Edu (CES) | OpenAI | Public, Internal, PII | Requires [CES Edu license](/genai/chatgpt-login). Personal accounts have no data protections. | [Access ChatGPT](/genai/chatgpt-login) |
+| Copilot | Microsoft | Public, Internal | Must use [institutional account (Work experience)](/genai/copilot-login). Personal accounts have no data protections. | [Access Copilot](/genai/copilot-login) |
+| Gemini | Google | Public, Internal | Must use [institutional Google account](/genai/gemini-login). Personal accounts have no data protections. | [Access Gemini](/genai/gemini-login) |
 
 For details on what each data classification level means, see the [BYU-Idaho Data Classification Policy](https://webmailbyui.sharepoint.com/sites/Policies/SitePages/Data%20Classification.aspx).
 
