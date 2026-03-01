@@ -1,4 +1,4 @@
-# How to Log In to ChatGPT with Your BYU-Idaho CES Subscription
+# How to Access ChatGPT with Your BYU-Idaho CES Subscription
 
 **Audience:** BYU-Idaho employees who have been provisioned a ChatGPT Edu license through the Church Educational System (CES)
 **Prerequisites:** You must have an active CES ChatGPT license assigned to your BYU-Idaho account before following these steps. If you're unsure whether you've been provisioned, contact your department administrator or the BYU-Idaho IT Help Desk.

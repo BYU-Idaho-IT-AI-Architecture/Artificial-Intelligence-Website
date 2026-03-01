@@ -1,4 +1,4 @@
-# How to Log In to Microsoft Copilot with Your BYU‑Idaho Account
+# How to Access Microsoft Copilot with Your BYU‑Idaho Account
 
 **Audience:** BYU‑Idaho students and employees accessing Microsoft Copilot with university‑managed credentials
 **Prerequisites:** You must have an active BYU‑Idaho Microsoft account (`username@byui.edu`). No special license request is required to use Microsoft Copilot because it is included with BYUI’s Microsoft 365 tenant and protected under university data policies.
