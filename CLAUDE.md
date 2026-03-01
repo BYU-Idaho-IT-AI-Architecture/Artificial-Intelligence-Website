@@ -15,6 +15,8 @@ This repository manages the content overhaul of BYU-Idaho's GenAI website (<www.
 ```
 BYUI-GenAI-Site/
 ├── .claude/
+│   ├── reference-docs/
+│   │   └── data-classification-policy.md
 │   └── settings.local.json
 ├── .gitignore
 ├── CHANGELOG.md
@@ -34,7 +36,22 @@ BYUI-GenAI-Site/
 │   ├── products.md
 │   └── training.md
 └── Future-State/
-    └── (empty - content to be authored)
+    ├── about.md
+    ├── academic-integrity.md
+    ├── access-chatgpt.md
+    ├── access-copilot.md
+    ├── access-gemini.md
+    ├── ai-in-academics.md
+    ├── ai-in-the-syllabus.md
+    ├── Best-Practices/
+    │   └── sycophancy.md
+    ├── copyright.md
+    ├── grading-with-ai.md
+    ├── home.md
+    ├── navbar.md
+    ├── privacy.md
+    ├── tools.md
+    └── training.md
 ```
 
 ### What's In Scope
@@ -160,8 +177,8 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 
 - New content -- no Current-State source material
 - Landing page with links to subpages
-- Subpages TBD -- potential topics include AI usage tips, data privacy practices, staying safe with AI
-- Subpage structure and specific topics to be defined before authoring begins
+- First subpage authored: sycophancy (AI agreeing with users instead of providing accurate answers)
+- Additional subpages TBD -- potential topics include AI usage tips, data privacy practices, staying safe with AI
 - Write for an employee audience: practical, actionable guidance (not generic AI hype)
 
 ### Privacy
@@ -191,6 +208,13 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - **Academic content boundary:** Do not unilaterally rewrite academic policy pages. Flag proposed changes for stakeholder review.
 - **No visual/design decisions:** Output is Markdown content only. University Communications handles styling and publishing in Brightspot.
 
+## Project Knowledge
+
+To the best of your ability, use the following knowledge to help you author the content:
+
+- For content pertaining to **data classification**, use the following knowledge:
+  - Leadership has elected to use a modified classification system for GenAI tools, based on the BYU-Idaho Data Classification Policy (see `.claude/reference-docs/data-classification-policy.md`)
+
 ## Workflow
 
 ### Content Authoring
@@ -212,6 +236,9 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 | home.md | home.md | |
 | about.md | about.md | |
 | products.md | tools.md | Renamed per directive |
+| -- | access-chatgpt.md | Tool access/login guide |
+| -- | access-copilot.md | Tool access/login guide |
+| -- | access-gemini.md | Tool access/login guide |
 | ai-in-academics.md | ai-in-academics.md | Academic stakeholder review required |
 | academic-integrity.md | academic-integrity.md | Academic stakeholder review required |
 | ai-in-the-syllabus.md | ai-in-the-syllabus.md | Academic stakeholder review required |
@@ -219,8 +246,8 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 | privacy.md | privacy.md | |
 | copyright.md | copyright.md | |
 | training.md | training.md | Placeholder content only |
-| -- | best-practices.md | New content (no Current-State source) |
-| navbar.md | -- | Reference only (documents old nav structure) |
+| -- | Best-Practices/sycophancy.md | First best practices subpage |
+| navbar.md | navbar.md | Updated navigation structure |
 | custom-bots.md | -- | Removed (inaccurate, noise) |
 | connectors.md | -- | Removed (inaccurate, noise) |
 
@@ -235,17 +262,18 @@ Track content authoring status here. Update as pages are completed.
 
 | Page | Status | Notes |
 |------|--------|-------|
-| Home | Not started | |
-| About GenAI | Not started | |
-| Tools | Draft complete | |
-| AI in Academics | Not started | Requires academic stakeholder review |
-| Academic Integrity | Not started | Requires academic stakeholder review |
-| AI in the Syllabus | Not started | Requires academic stakeholder review |
-| Grading with AI | Not started | Requires academic stakeholder review |
-| Privacy | Not started | |
-| Copyright | Not started | |
-| Best Practices | Not started | New section, subpages TBD |
-| Training | Not started | Placeholder only |
+| Home | Draft complete | Rewritten per directives |
+| About GenAI | Baseline copied | Current-State content copied, not yet rewritten |
+| Tools | Draft complete | Includes access guides (access-chatgpt/copilot/gemini.md) |
+| AI in Academics | Baseline copied | Requires academic stakeholder review |
+| Academic Integrity | Baseline copied | Requires academic stakeholder review |
+| AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
+| Grading with AI | Baseline copied | Requires academic stakeholder review |
+| Privacy | Baseline copied | Current-State content copied, not yet rewritten |
+| Copyright | Baseline copied | Current-State content copied, not yet rewritten |
+| Best Practices | In progress | Sycophancy subpage drafted; additional subpages TBD |
+| Training | Baseline copied | Needs replacement with placeholder content |
+| Navbar | Draft complete | Updated navigation structure |
 
 ## Git
 
