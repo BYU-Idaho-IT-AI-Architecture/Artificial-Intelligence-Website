@@ -27,9 +27,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Copilot login guide (copilot-login.md) with step-by-step sign-in instructions
 - Tools page clarifies Copilot data protections apply only to institutional Work experience
 
+- Sycophancy best practices page (Best-Practices/syncophancy.md)
+- Updated navbar reference for Future-State site structure
+
 ### Changed
 - Tools table: moved tool-specific data protection notes into a new "Note" column with links to login guides
 - Tools table: Access links now point to login guide pages instead of external tool URLs
+- Renamed login guides to access guides (chatgpt-login.md, copilot-login.md, gemini-login.md to access-chatgpt.md, access-copilot.md, access-gemini.md)
+- Simplified Tools page heading from "GenAI Tools" to "Tools"
+- Rewrote Home page: removed old updates, replaced University AI Office and LIT contacts with IT contact, modernized content structure
 
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)
