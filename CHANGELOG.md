@@ -40,3 +40,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Removed
 - Design document (docs/plans/2026-02-26-claude-md-design.md)
+- Current-State/ directory and all old site webcrawl files (no longer needed)
+- Future-State/ renamed to Website/ (content is now the canonical version, not a draft)

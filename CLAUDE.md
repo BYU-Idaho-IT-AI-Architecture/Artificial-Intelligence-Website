@@ -7,8 +7,7 @@ This repository manages the content overhaul of BYU-Idaho's GenAI website (<www.
 ### What This Repo Is
 
 - A content project, not a code project
-- Current-State/: FireCrawl webcrawl of the existing GenAI site (Markdown)
-- Future-State/: New web content (Markdown) to be sent to University Communications for publishing in Brightspot CMS
+- Website/: Web content (Markdown) to be sent to University Communications for publishing in Brightspot CMS
 
 ### Directory Tree
 
@@ -21,21 +20,7 @@ BYUI-GenAI-Site/
 ├── .gitignore
 ├── CHANGELOG.md
 ├── CLAUDE.md
-├── Current-State/
-│   ├── about.md
-│   ├── academic-integrity.md
-│   ├── ai-in-academics.md
-│   ├── ai-in-the-syllabus.md
-│   ├── connectors.md
-│   ├── copyright.md
-│   ├── custom-bots.md
-│   ├── grading-with-ai.md
-│   ├── home.md
-│   ├── navbar.md
-│   ├── privacy.md
-│   ├── products.md
-│   └── training.md
-└── Future-State/
+└── Website/
     ├── about.md
     ├── academic-integrity.md
     ├── access-chatgpt.md
@@ -221,38 +206,30 @@ To the best of your ability, use the following knowledge to help you author the 
 
 ### Content Authoring
 
-1. Read the corresponding Current-State/ file to understand what exists
-2. Apply the per-page directives from this CLAUDE.md
-3. Write the new content to Future-State/<page-name>.md
-4. Output format: Markdown (GitHub Flavored Markdown)
+1. Apply the per-page directives from this CLAUDE.md
+2. Write the new content to Website/<page-name>.md
+3. Output format: Markdown (GitHub Flavored Markdown)
 
-### File Naming
+### File Inventory
 
-- Future-State files should match Current-State filenames for traceability
-- Exception: Current-State/products.md → Future-State/tools.md (renamed per directive)
-
-### File Mapping
-
-| Current-State File | Future-State File | Notes |
-|---|---|---|
-| home.md | home.md | |
-| about.md | about.md | |
-| products.md | tools.md | Renamed per directive |
-| -- | access-chatgpt.md | Tool access/login guide |
-| -- | access-copilot.md | Tool access/login guide |
-| -- | access-gemini.md | Tool access/login guide |
-| ai-in-academics.md | ai-in-academics.md | Academic stakeholder review required |
-| academic-integrity.md | academic-integrity.md | Academic stakeholder review required |
-| ai-in-the-syllabus.md | ai-in-the-syllabus.md | Academic stakeholder review required |
-| grading-with-ai.md | grading-with-ai.md | Academic stakeholder review required |
-| privacy.md | privacy.md | |
-| copyright.md | copyright.md | |
-| training.md | training.md | Placeholder content only |
-| -- | data-usage-guide.md | Step-by-step AI data usage decision guide (subpage of Privacy) |
-| -- | Best-Practices/sycophancy.md | First best practices subpage |
-| navbar.md | navbar.md | Updated navigation structure |
-| custom-bots.md | -- | Removed (inaccurate, noise) |
-| connectors.md | -- | Removed (inaccurate, noise) |
+| File | Notes |
+|---|---|
+| home.md | |
+| about.md | |
+| tools.md | |
+| access-chatgpt.md | Tool access/login guide |
+| access-copilot.md | Tool access/login guide |
+| access-gemini.md | Tool access/login guide |
+| ai-in-academics.md | Academic stakeholder review required |
+| academic-integrity.md | Academic stakeholder review required |
+| ai-in-the-syllabus.md | Academic stakeholder review required |
+| grading-with-ai.md | Academic stakeholder review required |
+| privacy.md | |
+| copyright.md | |
+| training.md | Placeholder content only |
+| data-usage-guide.md | Step-by-step AI data usage decision guide (subpage of Privacy) |
+| Best-Practices/sycophancy.md | First best practices subpage |
+| navbar.md | Updated navigation structure |
 
 ### Review Process
 
