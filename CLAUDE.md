@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-This repository manages the content overhaul of BYU-Idaho's GenAI website (<www.byui.edu/genai>). IT now has a leadership role in GenAI governance, and the CIO has tasked the AI Solutions and Architecture team with revamping the site.
+This repository manages the content overhaul of BYU-Idaho's Artificial Intelligence website (<www.byui.edu/genai>). IT now has a leadership role in GenAI governance, and the CIO has tasked the AI Solutions and Architecture team with revamping the site.
+
+> Note: We're renaming the site from "GenAI" to simply "Artificial Intelligence." The term GenAI is an outdated term and limits the true depth and breadth of AI to simply generative AI. By using "Artificial Intelligence", we can expand into other topics, such as Agentic AI.
 
 ### What This Repo Is
 
@@ -34,7 +36,8 @@ BYUI-GenAI-Site/
     ├── Best-Practices/
     │   ├── best-practices.md
     │   ├── sycophancy.md
-    │   └── hallucination.md
+    │   ├── hallucination.md
+    │   └── managing-context.md
     ├── Data-Privacy/
     │   ├── protecting-data.md
     │   ├── data-privacy.md
@@ -76,16 +79,6 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - Updates to academic content require collaboration with academic stakeholders -- do not unilaterally rewrite academic policy
 - These pages may move to a different home in the future
 
-### Key Directives
-
-1. **IT Help Center visibility:** The IT Help Center request form (<https://td.byui.edu/SBTDClient/79/ITHelpCenter/Home/?ToUrl=>) must be prominently featured on the Home page and Tools page. All new software acquisitions, AI development requests, and tool requests route here.
-
-2. **Remove noise:** Strip outdated, inaccurate, and confusing content. When in doubt, cut it.
-
-3. **Contact info:** Replace all references to the old University AI Office (<palmers@byui.edu>, Kimball 210D) and Learning Innovation & Technology (<ashbyd@byui.edu>, Manwaring Center 384) with:
-   - IT Help Center link for requests
-   - Team contact info for general GenAI questions (TBD -- use placeholder)
-
 ## Site Structure
 
 ### Navigation
@@ -96,6 +89,7 @@ See `Website/navbar.md` for the source of truth. Summary:
 - Best Practices (`Best-Practices/best-practices.md`)
   - Sycophancy (`Best-Practices/sycophancy.md`)
   - Hallucination (`Best-Practices/hallucination.md`)
+  - Managing Context (`Best-Practices/managing-context.md`)
 - Academics (`Academics/academics.md`)
   - AI in Academics (`Academics/ai-in-academics.md`)
   - Academic Integrity (`Academics/academic-integrity.md`)
@@ -165,6 +159,7 @@ See `Website/navbar.md` for the source of truth. Summary:
 - Landing page (`best-practices.md`) with image cards linking to subpages
 - Sycophancy subpage: why AI agrees with users, how to prompt for honest answers
 - Hallucination subpage: why AI fabricates information, how to detect and prevent it
+- Managing Context subpage: how context shapes AI output, context window management, persistent context features per tool
 - Additional subpages TBD -- potential topics include AI usage tips, staying safe with AI
 - Write for an employee audience: practical, actionable guidance (not generic AI hype)
 - Article structure pattern: scenario/definition, causes, why it matters, best practices
@@ -215,6 +210,7 @@ To the best of your ability, use the following knowledge to help you author the 
 | Best-Practices/best-practices.md | Best Practices landing page |
 | Best-Practices/sycophancy.md | AI sycophancy article |
 | Best-Practices/hallucination.md | AI hallucination article |
+| Best-Practices/managing-context.md | Context management best practices |
 | Data-Privacy/protecting-data.md | Protecting Your Data landing page |
 | Data-Privacy/data-privacy.md | Data privacy guidelines |
 | Data-Privacy/data-usage-guide.md | Step-by-step AI data usage decision guide |
@@ -243,9 +239,10 @@ Track content authoring status here. Update as pages are completed.
 | Academic Integrity | Baseline copied | Requires academic stakeholder review |
 | AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
 | Grading with AI | Baseline copied | Requires academic stakeholder review |
-| Best Practices landing | Draft complete | Image cards for sycophancy and hallucination |
+| Best Practices landing | Draft complete | Image cards for sycophancy, hallucination, and managing context |
 | Sycophancy | Draft complete | First best practices article |
 | Hallucination | Draft complete | Second best practices article |
+| Managing Context | Draft complete | Third best practices article |
 | Protecting Your Data landing | Draft complete | Image cards linking to subpages |
 | Data Privacy | Baseline copied | Not yet rewritten |
 | Data Usage Guide | Draft complete | Step-by-step decision guide for AI data usage |

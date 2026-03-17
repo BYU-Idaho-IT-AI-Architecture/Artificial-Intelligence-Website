@@ -4,6 +4,7 @@
 - Best Practices (`Best-Practices/best-practices.md`)
   - Sycophancy (`Best-Practices/sycophancy.md`)
   - Hallucination (`Best-Practices/hallucination.md`)
+  - Managing Context (`Best-Practices/managing-context.md`)
 - Academics (`Academics/academics.md`)
   - AI in Academics (`Academics/ai-in-academics.md`)
   - Academic Integrity (`Academics/academic-integrity.md`)

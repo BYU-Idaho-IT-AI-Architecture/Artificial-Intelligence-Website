@@ -38,6 +38,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Protecting Your Data landing page (Data-Privacy/protecting-data.md)
 - Footer content (footer.md)
 - Design spec for hallucination article (docs/superpowers/specs/2026-03-17-hallucination-article-design.md)
+- Managing Context best practices article (Best-Practices/managing-context.md) covering context engineering, context windows, and tool-specific persistent context features
 
 ### Changed
 - Tools table: moved tool-specific data protection notes into a new "Note" column with links to login guides
