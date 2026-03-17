@@ -20,24 +20,31 @@ BYUI-GenAI-Site/
 ├── .gitignore
 ├── CHANGELOG.md
 ├── CLAUDE.md
+├── NOTES.md
 └── Website/
-    ├── about.md
-    ├── academic-integrity.md
-    ├── access-chatgpt.md
-    ├── access-copilot.md
-    ├── access-gemini.md
-    ├── ai-in-academics.md
-    ├── ai-in-the-syllabus.md
-    ├── Best-Practices/
-    │   └── sycophancy.md
-    ├── copyright.md
-    ├── data-usage-guide.md
-    ├── grading-with-ai.md
     ├── home.md
     ├── navbar.md
-    ├── privacy.md
-    ├── tools.md
-    └── training.md
+    ├── footer.md
+    ├── Academics/
+    │   ├── academics.md
+    │   ├── ai-in-academics.md
+    │   ├── academic-integrity.md
+    │   ├── ai-in-the-syllabus.md
+    │   └── grading-with-ai.md
+    ├── Best-Practices/
+    │   ├── best-practices.md
+    │   ├── sycophancy.md
+    │   └── hallucination.md
+    ├── Data-Privacy/
+    │   ├── protecting-data.md
+    │   ├── data-privacy.md
+    │   ├── data-usage-guide.md
+    │   └── copyright.md
+    └── Resources/
+        ├── approved-tools.md
+        ├── chatgpt.md
+        ├── copilot.md
+        └── gemini.md
 ```
 
 ### What's In Scope
@@ -81,27 +88,35 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 
 ## Site Structure
 
-### Navigation (New)
+### Navigation
 
-- Home
-- About GenAI
-- Tools
-- AI in Academics
-  - Academic Integrity
-  - AI in the Syllabus
-  - Grading with AI
-- Best Practices
-  - (Subpages TBD -- e.g., AI usage, data privacy, staying safe with AI)
-- Privacy
-  - Data Usage Guide
-- Copyright
-- Training
+See `Website/navbar.md` for the source of truth. Summary:
 
-### Pages Removed
+- Home (`home.md`)
+- Best Practices (`Best-Practices/best-practices.md`)
+  - Sycophancy (`Best-Practices/sycophancy.md`)
+  - Hallucination (`Best-Practices/hallucination.md`)
+- Academics (`Academics/academics.md`)
+  - AI in Academics (`Academics/ai-in-academics.md`)
+  - Academic Integrity (`Academics/academic-integrity.md`)
+  - AI in the Syllabus (`Academics/ai-in-the-syllabus.md`)
+  - Grading with AI (`Academics/grading-with-ai.md`)
+- Protecting Your Data (`Data-Privacy/protecting-data.md`)
+  - Data Privacy (`Data-Privacy/data-privacy.md`)
+  - Data Usage Guide (`Data-Privacy/data-usage-guide.md`)
+  - Copyright (`Data-Privacy/copyright.md`)
+- Resources (`Resources/approved-tools.md`)
+  - Access ChatGPT (`Resources/chatgpt.md`)
+  - Access Copilot (`Resources/copilot.md`)
+  - Access Gemini (`Resources/gemini.md`)
 
+### Pages Removed (from original site)
+
+- About GenAI -- removed (content pending rewrite)
+- Training -- removed (content pending rewrite)
 - Custom Bots -- inaccurate, noise
 - Connectors -- inaccurate, noise
-- All product-specific subpages from old Products section (replaced by Tools page)
+- All product-specific subpages from old Products section (replaced by Resources/approved-tools.md)
 - Events/Expo (referenced in old navbar but no content existed)
 
 ## Per-Page Directives
@@ -114,27 +129,12 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - Remove references to University AI Office and Learning Innovation & Technology as governance owners
 - Keep mission framing and strategic priorities if still relevant
 
-### About GenAI
+### Resources / Approved Tools (formerly Products)
 
-- Modernize the content -- the current tone treats GenAI as a novelty ("not truly understanding," "mimic")
-- Tighten for an employee audience; remove overly basic definitions
-- Update tool examples if any are dated
-- Keep the GenAI type categories (Text, Code, Image, etc.) but refresh descriptions
-
-### Tools (formerly Products)
-
-- Rename from "Products" to "Tools"
-- Keep only three tools: ChatGPT (OpenAI), Copilot (Microsoft), Gemini (Google)
-- Remove all other tools (NotebookLM, Zoom AI Companion, Lucid, Firefly, TopHat Ace, Apple Intelligence, Grammarly Go)
-- Remove "Type" column entirely
-- Remove "Conditionally Approved" status -- replace with data classification governance:
-  - ChatGPT: approved for first 3 classification levels (Public, Internal, PII) -- link to BYU-Idaho data classification
-  - Copilot: approved for first 2 classification levels (Public, Internal) -- link to BYU-Idaho data classification
-  - Gemini: approved for first 2 classification levels (Public, Internal) -- link to BYU-Idaho data classification
-- Each tool gets a "Click here to access it" link
-- Remove "BYU-Idaho GenAI Use and Procurement Guidelines" header and its 2 bullets
-- Keep and make prominent: "If you would like to use a tool that is not listed on this page or wish to use a tool not currently approved with any non-public data, please submit a request through the IT Help Center" -- link to IT Help Center form
-- IT Help Center callout should be visually prominent (not buried in a paragraph)
+- Three approved tools: ChatGPT (OpenAI), Copilot (Microsoft), Gemini (Google)
+- Each tool has data classification levels and a link to its access guide
+- IT Help Center callout for tool requests is prominent
+- Access guides in Resources/ folder: chatgpt.md, copilot.md, gemini.md
 
 ### AI in Academics
 
@@ -160,31 +160,21 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - Clean up verbosity
 - Updates require collaboration with academic stakeholders
 
-### Best Practices (New Section)
+### Best Practices
 
-- New content -- no Current-State source material
-- Landing page with links to subpages
-- First subpage authored: sycophancy (AI agreeing with users instead of providing accurate answers)
-- Additional subpages TBD -- potential topics include AI usage tips, data privacy practices, staying safe with AI
+- Landing page (`best-practices.md`) with image cards linking to subpages
+- Sycophancy subpage: why AI agrees with users, how to prompt for honest answers
+- Hallucination subpage: why AI fabricates information, how to detect and prevent it
+- Additional subpages TBD -- potential topics include AI usage tips, staying safe with AI
 - Write for an employee audience: practical, actionable guidance (not generic AI hype)
+- Article structure pattern: scenario/definition, causes, why it matters, best practices
 
-### Privacy
+### Data Privacy
 
-- Largely accurate -- clean up and polish
-- Keep the 4-tier data classification system and risk scenarios
-- Ensure "AI Strategy and Leadership team" references are updated to reflect new governance
-- Replace vague "AI Group" references with clear contact/process info
-
-### Copyright
-
-- Largely accurate -- clean up and polish
-- Legal content is time-sensitive; flag if content appears outdated relative to current copyright law
-
-### Training
-
-- Replace current content with a placeholder: "Training resources coming soon"
-- Remove all links to the 8 existing training modules
-- This page will be populated later with curated, up-to-date training content
+- Landing page (`protecting-data.md`) with image cards linking to subpages
+- Data Privacy (`data-privacy.md`): largely accurate -- clean up and polish; keep 4-tier data classification system
+- Data Usage Guide (`data-usage-guide.md`): step-by-step decision guide for AI data usage
+- Copyright (`copyright.md`): largely accurate -- clean up and polish; legal content is time-sensitive
 
 ## Editorial Principles
 
@@ -214,22 +204,25 @@ To the best of your ability, use the following knowledge to help you author the 
 
 | File | Notes |
 |---|---|
-| home.md | |
-| about.md | |
-| tools.md | |
-| access-chatgpt.md | Tool access/login guide |
-| access-copilot.md | Tool access/login guide |
-| access-gemini.md | Tool access/login guide |
-| ai-in-academics.md | Academic stakeholder review required |
-| academic-integrity.md | Academic stakeholder review required |
-| ai-in-the-syllabus.md | Academic stakeholder review required |
-| grading-with-ai.md | Academic stakeholder review required |
-| privacy.md | |
-| copyright.md | |
-| training.md | Placeholder content only |
-| data-usage-guide.md | Step-by-step AI data usage decision guide (subpage of Privacy) |
-| Best-Practices/sycophancy.md | First best practices subpage |
-| navbar.md | Updated navigation structure |
+| home.md | Site homepage |
+| navbar.md | Navigation structure (source of truth) |
+| footer.md | Site footer content |
+| Academics/academics.md | Academics landing page |
+| Academics/ai-in-academics.md | Academic stakeholder review required |
+| Academics/academic-integrity.md | Academic stakeholder review required |
+| Academics/ai-in-the-syllabus.md | Academic stakeholder review required |
+| Academics/grading-with-ai.md | Academic stakeholder review required |
+| Best-Practices/best-practices.md | Best Practices landing page |
+| Best-Practices/sycophancy.md | AI sycophancy article |
+| Best-Practices/hallucination.md | AI hallucination article |
+| Data-Privacy/protecting-data.md | Protecting Your Data landing page |
+| Data-Privacy/data-privacy.md | Data privacy guidelines |
+| Data-Privacy/data-usage-guide.md | Step-by-step AI data usage decision guide |
+| Data-Privacy/copyright.md | AI copyright considerations |
+| Resources/approved-tools.md | Approved tools with data classification |
+| Resources/chatgpt.md | ChatGPT access guide |
+| Resources/copilot.md | Copilot access guide |
+| Resources/gemini.md | Gemini access guide |
 
 ### Review Process
 
@@ -243,18 +236,21 @@ Track content authoring status here. Update as pages are completed.
 | Page | Status | Notes |
 |------|--------|-------|
 | Home | Draft complete | Rewritten per directives |
-| About GenAI | Baseline copied | Current-State content copied, not yet rewritten |
-| Tools | Draft complete | Includes access guides (access-chatgpt/copilot/gemini.md) |
+| Navbar | Draft complete | Updated navigation structure with file paths |
+| Footer | Draft complete | IT contact info |
+| Academics landing | Draft complete | Image cards linking to subpages |
 | AI in Academics | Baseline copied | Requires academic stakeholder review |
 | Academic Integrity | Baseline copied | Requires academic stakeholder review |
 | AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
 | Grading with AI | Baseline copied | Requires academic stakeholder review |
-| Privacy | Baseline copied | Current-State content copied, not yet rewritten |
-| Data Usage Guide | Draft complete | Step-by-step decision guide for AI data usage (subpage of Privacy) |
-| Copyright | Baseline copied | Current-State content copied, not yet rewritten |
-| Best Practices | In progress | Sycophancy subpage drafted; additional subpages TBD |
-| Training | Baseline copied | Needs replacement with placeholder content |
-| Navbar | Draft complete | Updated navigation structure |
+| Best Practices landing | Draft complete | Image cards for sycophancy and hallucination |
+| Sycophancy | Draft complete | First best practices article |
+| Hallucination | Draft complete | Second best practices article |
+| Protecting Your Data landing | Draft complete | Image cards linking to subpages |
+| Data Privacy | Baseline copied | Not yet rewritten |
+| Data Usage Guide | Draft complete | Step-by-step decision guide for AI data usage |
+| Copyright | Baseline copied | Not yet rewritten |
+| Approved Tools | Draft complete | Includes access guides (chatgpt/copilot/gemini.md) |
 
 ## Git
 
@@ -287,18 +283,3 @@ This project maintains a `CHANGELOG.md` following the [Keep a Changelog](https:/
   - Removed: "Removed Custom Bots and Connectors pages (inaccurate, out of scope)"
   - Fixed: "Corrected data classification levels for Copilot on Tools page"
 
----
-
-This is a **Lucide "bot" icon** in SVG format. Here's a breakdown:
-
-- **Size:** 24x24 pixels
-- **Style:** Outline/stroke-based (no fill), with rounded line caps and joins
-- **Stroke color:** `#2b2b2b` (near-black dark gray)
-- **Stroke width:** 2px
-- **What it depicts:** A simple robot/bot face consisting of:
-  - A **rounded rectangle** (16x12) as the robot's head/body
-  - An **antenna** sticking up from the top (vertical line with a horizontal segment)
-  - Two **eyes** represented by short vertical lines
-  - Two small **horizontal lines** on the left and right sides (like ears or side connectors)
-
-It's from the [Lucide](https://lucide.dev/) icon library (a fork of Feather Icons), commonly used in web UIs to represent chatbots, AI assistants, or automated systems.

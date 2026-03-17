@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- NOTES.md document specifically for the web dev team publishing to Brightspot CMS (explaining how to use the repo, reading Markdown, navigation, etc.)
+   - *This file DOES not get included on the website. It's simply a reference document for the web dev team*
 - Project repository initialized
 - CLAUDE.md with project overview, governance model, site structure, per-page directives, editorial principles, and workflow
 - Design document: docs/plans/2026-02-26-claude-md-design.md
@@ -51,7 +53,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Updated navbar to reflect new directory structure with nested subpages
 
 ### Removed
-- Design document (docs/plans/2026-02-26-claude-md-design.md)
 - Current-State/ directory and all old site webcrawl files (no longer needed)
 - Future-State/ renamed to Website/ (content is now the canonical version, not a draft)
 - Removed about.md and training.md from Website root (content relocated or pending rewrite)
