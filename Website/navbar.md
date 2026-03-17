@@ -5,6 +5,8 @@
   - Sycophancy (`Best-Practices/sycophancy.md`)
   - Hallucination (`Best-Practices/hallucination.md`)
   - Managing Context (`Best-Practices/managing-context.md`)
+- Learn About AI (`Learn-About-AI/learn-about-ai.md`)
+  - How LLMs Are Trained (`Learn-About-AI/how-llms-are-trained.md`)
 - Academics (`Academics/academics.md`)
   - AI in Academics (`Academics/ai-in-academics.md`)
   - Academic Integrity (`Academics/academic-integrity.md`)

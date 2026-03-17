@@ -39,6 +39,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Footer content (footer.md)
 - Design spec for hallucination article (docs/superpowers/specs/2026-03-17-hallucination-article-design.md)
 - Managing Context best practices article (Best-Practices/managing-context.md) covering context engineering, context windows, and tool-specific persistent context features
+- Learn About AI section: new navigation category for educational content that builds AI literacy
+- Learn About AI landing page (Learn-About-AI/learn-about-ai.md)
+- How LLMs Are Trained article (Learn-About-AI/how-llms-are-trained.md) covering data preparation, pre-training via next-word prediction, and post-training alignment (instruction tuning, RLHF)
 
 ### Changed
 - Tools table: moved tool-specific data protection notes into a new "Note" column with links to login guides

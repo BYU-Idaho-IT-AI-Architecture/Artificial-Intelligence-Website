@@ -38,6 +38,9 @@ BYUI-GenAI-Site/
     │   ├── sycophancy.md
     │   ├── hallucination.md
     │   └── managing-context.md
+    ├── Learn-About-AI/
+    │   ├── learn-about-ai.md
+    │   └── how-llms-are-trained.md
     ├── Data-Privacy/
     │   ├── protecting-data.md
     │   ├── data-privacy.md
@@ -90,6 +93,8 @@ See `Website/navbar.md` for the source of truth. Summary:
   - Sycophancy (`Best-Practices/sycophancy.md`)
   - Hallucination (`Best-Practices/hallucination.md`)
   - Managing Context (`Best-Practices/managing-context.md`)
+- Learn About AI (`Learn-About-AI/learn-about-ai.md`)
+  - How LLMs Are Trained (`Learn-About-AI/how-llms-are-trained.md`)
 - Academics (`Academics/academics.md`)
   - AI in Academics (`Academics/ai-in-academics.md`)
   - Academic Integrity (`Academics/academic-integrity.md`)
@@ -107,7 +112,7 @@ See `Website/navbar.md` for the source of truth. Summary:
 ### Pages Removed (from original site)
 
 - About GenAI -- removed (content pending rewrite)
-- Training -- removed (content pending rewrite)
+- Training -- replaced by Learn About AI section with new educational content
 - Custom Bots -- inaccurate, noise
 - Connectors -- inaccurate, noise
 - All product-specific subpages from old Products section (replaced by Resources/approved-tools.md)
@@ -153,6 +158,16 @@ See `Website/navbar.md` for the source of truth. Summary:
 - Keep foundational principles, operational guidelines, risk table
 - Clean up verbosity
 - Updates require collaboration with academic stakeholders
+
+### Learn About AI
+
+- Landing page (`learn-about-ai.md`) with image cards linking to subpages
+- **Purpose:** Educational content that builds AI literacy across the BYU-Idaho community. Articles explain *how AI works* at a conceptual level -- not "do this, not that" (that's Best Practices), but "here's what's happening under the hood and why it matters"
+- **Audience calibration:** Write for accessibility first -- any employee should be able to follow the article without a technical background. Do not shy away from more advanced concepts, but explain them without assuming prior knowledge
+- **Distinction from Best Practices:** Best Practices = actionable guidance (protect yourself, avoid pitfalls). Learn About AI = understanding the technology (how LLMs are trained, what RAG is, how alignment works). There will be natural overlap in concepts, but the framing differs
+- **Existing source content:** Ron has previously authored educational articles at `https://byui.mintlify.app/`. When adapting existing content for this site, generalize product-specific references (e.g., references to the Support Agent or specific model versions) so articles serve all employees, not just users of one system
+- **Article structure pattern:** accessible introduction, concept explanation with analogies, why it matters at BYU-Idaho, key takeaways
+- Planned articles: How LLMs Are Trained (first article, source content exists), additional topics TBD (e.g., What is RAG, What is Model Alignment)
 
 ### Best Practices
 
@@ -207,6 +222,8 @@ To the best of your ability, use the following knowledge to help you author the 
 | Academics/academic-integrity.md | Academic stakeholder review required |
 | Academics/ai-in-the-syllabus.md | Academic stakeholder review required |
 | Academics/grading-with-ai.md | Academic stakeholder review required |
+| Learn-About-AI/learn-about-ai.md | Learn About AI landing page |
+| Learn-About-AI/how-llms-are-trained.md | How LLMs are trained (source content exists at mintlify) |
 | Best-Practices/best-practices.md | Best Practices landing page |
 | Best-Practices/sycophancy.md | AI sycophancy article |
 | Best-Practices/hallucination.md | AI hallucination article |
@@ -239,6 +256,8 @@ Track content authoring status here. Update as pages are completed.
 | Academic Integrity | Baseline copied | Requires academic stakeholder review |
 | AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
 | Grading with AI | Baseline copied | Requires academic stakeholder review |
+| Learn About AI landing | Draft complete | Image cards linking to subpages |
+| How LLMs Are Trained | Draft complete | Educational article covering three-phase training process |
 | Best Practices landing | Draft complete | Image cards for sycophancy, hallucination, and managing context |
 | Sycophancy | Draft complete | First best practices article |
 | Hallucination | Draft complete | Second best practices article |
