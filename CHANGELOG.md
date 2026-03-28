@@ -7,9 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- New `genai-site-reviewer` skill for auditing content pages against all five reference documents (Church guidance, strategy, objectives, landing pages, data classification) with checks for objectives alignment, strategy alignment, Church principles alignment, and editorial compliance
 - Reference documents for AI strategy, governance objectives, landing page structure, and Church AI guiding principles in `.claude/reference-docs/`
 - Project Knowledge section in CLAUDE.md with rules for referencing all five reference documents (Church guidance, strategy, objectives, landing pages, data classification)
 - Per-page directives for Teaching with AI, Working with AI, and Learning with AI landing pages with audience-specific structure (Topics & Standards, Training Resources, Available Tools)
+
+### Changed
+- Enhanced `genai-site-writer` skill with a grounding step that reads reference documents before planning, and expanded the reference section from data classification only to all five reference documents
 - NOTES.md document specifically for the web dev team publishing to Brightspot CMS (explaining how to use the repo, reading Markdown, navigation, etc.)
    - *This file DOES not get included on the website. It's simply a reference document for the web dev team*
 
