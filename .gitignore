@@ -3,3 +3,7 @@
 
 # Claude Docs
 .claude/*
+
+# Docx exports
+export/
+ai-website-content-*.zip

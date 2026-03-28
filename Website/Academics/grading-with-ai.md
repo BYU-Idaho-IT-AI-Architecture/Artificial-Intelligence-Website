@@ -37,7 +37,7 @@ A clear and accessible process must be provided for students to petition for a f
 
 ### Adherence to Data Privacy and Approved Tools
 
-To safeguard student intellectual property (IP) and personally identifiable information (PII), faculty should use only AI grading tools that have been approved by the BYU-Idaho AI Executive Committee. [See approved tools](https://www.byui.edu/genai/products).
+To safeguard student intellectual property (IP) and personally identifiable information (PII), faculty should use only AI grading tools that have been approved by the BYU-Idaho AI Executive Committee. [See approved tools](/genai/approved-tools).
 
 ## Critical Risks of Non-Compliance
 

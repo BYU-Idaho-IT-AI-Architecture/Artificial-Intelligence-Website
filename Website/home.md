@@ -16,19 +16,10 @@ Artificial Intelligence is rapidly evolving and becoming increasingly important 
      - *Discover academic resources for the classroom*
      - Links to "Academics" landing page (see `Website/Academics/academics.md`)
    - Work with AI
-     - *Learn about resources for employees to help boost productivity* 
-     - Links to "Approved Tools" landing page (see `Website/Resources/approved-tools.md`)
+     - *Learn about resources for employees to help boost productivity*
+     - Links to "Working with AI" landing page (see `Website/Working-with-AI/working-with-ai.md`)
    - Learn with AI
      - *Find resources available for students to maximize learning*
-     - Links to "Approved Tools" landing page (see `Website/Resources/approved-tools.md`)
+     - Links to "Learning with AI" landing page (see `Website/Learning-with-AI/learning-with-ai.md`)
 3. **Data Privacy & Copyright**
    - Links to Data Privacy landing page (see `Website/Data-Privacy/protecting-data.md`)
-
-## A Place of Permanent Innovation
-
-Consistent with our prophetic direction to be a "place of innovation—permanently," artificial intelligence will strengthen and advance BYU-Idaho's strategic position of:
-
-1. Teaching-Focused Faculty
-2. Realizing Potential in Everyone
-3. Providing Real-World Preparation
-4. Offering a High-Value Education

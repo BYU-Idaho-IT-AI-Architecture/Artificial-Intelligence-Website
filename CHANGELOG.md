@@ -42,8 +42,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Learn About AI section: new navigation category for educational content that builds AI literacy
 - Learn About AI landing page (Learn-About-AI/learn-about-ai.md)
 - How LLMs Are Trained article (Learn-About-AI/how-llms-are-trained.md) covering data preparation, pre-training via next-word prediction, and post-training alignment (instruction tuning, RLHF)
+- Working with AI landing page (Working-with-AI/working-with-ai.md) for staff and administrative employees
+- Getting Started with AI article (Working-with-AI/getting-started.md) covering tool access, use cases, and data classification basics for employees
+- Learning with AI landing page (Learning-with-AI/learning-with-ai.md) for students, linking to approved tools, academic integrity, best practices, and data privacy
+- "What About Other AI Tools?" section on Approved Tools page acknowledging non-approved tools exist and clarifying BYU-Idaho's support scope
 
 ### Changed
+- Homepage "Work with AI" card now links to Working with AI landing page instead of Approved Tools
+- Homepage "Learn with AI" card now links to Learning with AI landing page instead of Approved Tools
+- Learning with AI landing page highlights Gemini (with NotebookLM) and Copilot as the two AI tools available to students; ChatGPT Edu is currently limited to full-time employees
+- Replaced all SharePoint Data Classification Policy links with internal references to the site's Data Privacy page (approved-tools.md, data-privacy.md, data-usage-guide.md)
+- Fixed old /genai/products URLs in Academic Integrity and Grading with AI pages to point to /genai/approved-tools
+- Fixed old /genai/products URL in Data Privacy page to point to /genai/approved-tools
+- Updated all IT Help Center links to use the Project Request form for tool and software requests
+- Clarified on Approved Tools page that ChatGPT Edu is currently available to full-time employees only
+
+### Removed
+- "A Place of Permanent Innovation" section from homepage (moved to AI Principles page in CMS by University Communications)
+
+### Changed (previous)
 - Tools table: moved tool-specific data protection notes into a new "Note" column with links to login guides
 - Tools table: Access links now point to login guide pages instead of external tool URLs
 - Renamed login guides to access guides (chatgpt-login.md, copilot-login.md, gemini-login.md to access-chatgpt.md, access-copilot.md, access-gemini.md)

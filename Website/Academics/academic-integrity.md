@@ -1,6 +1,6 @@
 ---
 url: "https://www.byui.edu/genai/academic-integrity"
-title: "GenAI Academic Integrity | BYU-Idaho"
+title: "Academic Integrity"
 ---
 
 # Academic Integrity and AI Use at BYU-Idaho
@@ -33,7 +33,7 @@ To ensure ethical and thoughtful use of AI, BYU–Idaho encourages students to f
 ### 2. Data Protection
 
 - Never enter personal, private, or sensitive data into AI tools.
-- Use only [tools that are approved](https://www.byui.edu/genai/products) or well-vetted by the university.
+- Use only [tools that are approved](/genai/approved-tools) or well-vetted by the university.
 
 ### 3. Transparency
 

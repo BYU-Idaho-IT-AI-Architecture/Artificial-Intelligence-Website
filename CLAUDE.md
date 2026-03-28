@@ -22,6 +22,7 @@ BYUI-GenAI-Site/
 ├── .gitignore
 ├── CHANGELOG.md
 ├── CLAUDE.md
+├── export-docx.sh
 ├── NOTES.md
 └── Website/
     ├── home.md
@@ -38,6 +39,11 @@ BYUI-GenAI-Site/
     │   ├── sycophancy.md
     │   ├── hallucination.md
     │   └── managing-context.md
+    ├── Working-with-AI/
+    │   ├── working-with-ai.md
+    │   └── getting-started.md
+    ├── Learning-with-AI/
+    │   └── learning-with-ai.md
     ├── Learn-About-AI/
     │   ├── learn-about-ai.md
     │   └── how-llms-are-trained.md
@@ -104,6 +110,9 @@ See `Website/navbar.md` for the source of truth. Summary:
   - Data Privacy (`Data-Privacy/data-privacy.md`)
   - Data Usage Guide (`Data-Privacy/data-usage-guide.md`)
   - Copyright (`Data-Privacy/copyright.md`)
+- Working with AI (`Working-with-AI/working-with-ai.md`)
+  - Getting Started (`Working-with-AI/getting-started.md`)
+- Learning with AI (`Learning-with-AI/learning-with-ai.md`)
 - Resources (`Resources/approved-tools.md`)
   - Access ChatGPT (`Resources/chatgpt.md`)
   - Access Copilot (`Resources/copilot.md`)
@@ -232,6 +241,9 @@ To the best of your ability, use the following knowledge to help you author the 
 | Data-Privacy/data-privacy.md | Data privacy guidelines |
 | Data-Privacy/data-usage-guide.md | Step-by-step AI data usage decision guide |
 | Data-Privacy/copyright.md | AI copyright considerations |
+| Working-with-AI/working-with-ai.md | Working with AI landing page (staff/admin audience) |
+| Working-with-AI/getting-started.md | Getting Started with AI article for employees |
+| Learning-with-AI/learning-with-ai.md | Learning with AI landing page (student audience) |
 | Resources/approved-tools.md | Approved tools with data classification |
 | Resources/chatgpt.md | ChatGPT access guide |
 | Resources/copilot.md | Copilot access guide |
@@ -241,6 +253,30 @@ To the best of your ability, use the following knowledge to help you author the 
 
 - Academic content changes should be flagged for stakeholder review before finalizing
 - All content is reviewed by Ron before being sent to University Communications
+
+### Exporting for University Communications
+
+When content is ready to hand off to Jericho (Strategic Communication Coordinator), use the export script to convert Markdown to Word docs:
+
+```bash
+# Export only pages changed since a reference point (preferred)
+./export-docx.sh --since <git-ref>
+
+# Examples
+./export-docx.sh --since HEAD~5          # Last 5 commits
+./export-docx.sh --since handoff-v1      # Since a tagged handoff
+
+# Export all pages (first-time handoff or full refresh)
+./export-docx.sh
+```
+
+- **Script:** `export-docx.sh` (project root)
+- **Output:** `export/` directory with `.docx` files mirroring `Website/` structure, plus a date-stamped zip (`ai-website-content-YYYYMMDD.zip`)
+- **Cover sheet:** When using `--since`, a `CHANGES.docx` is included listing which pages changed and a summary pulled from commit messages
+- **Handoff tagging:** After delivering to Jericho, tag the repo (e.g., `git tag handoff-v1`) so the next export can diff against it
+- `export/` and `ai-website-content-*.zip` are gitignored
+
+Jericho receives Word docs only -- no Markdown. The quality of the change summary depends on descriptive commit messages (see Commits section above).
 
 ## Progress
 
@@ -266,18 +302,25 @@ Track content authoring status here. Update as pages are completed.
 | Data Privacy | Baseline copied | Not yet rewritten |
 | Data Usage Guide | Draft complete | Step-by-step decision guide for AI data usage |
 | Copyright | Baseline copied | Not yet rewritten |
-| Approved Tools | Draft complete | Includes access guides (chatgpt/copilot/gemini.md) |
+| Working with AI landing | Draft complete | Landing page for staff/admin employees |
+| Getting Started with AI | Draft complete | Employee guide covering tool access, use cases, data basics |
+| Learning with AI landing | Draft complete | Landing page for students |
+| Approved Tools | Draft complete | Includes access guides (chatgpt/copilot/gemini.md), other tools acknowledgment |
 
 ## Git
 
 ### Commits
 
 - Use imperative mood (e.g., "Add tools page content" not "Added tools page content")
-- Concise, descriptive, and professional
 - No emojis
 - No Claude Code signatures (no "Co-Authored-By: Claude", no generated-with tags)
 - Scope commits to logical units of work -- one page or one coherent change per commit, not bulk "update everything" commits
 - Always run `git diff` before committing to verify what's being committed
+- **Write descriptive messages that explain what changed and why.** Commit messages are consumed downstream by `export-docx.sh` to generate a plain-language change summary for University Communications. Write them so a non-technical reader (Jericho) understands what happened on each page.
+  - Bad: `Update academic-integrity.md`
+  - Bad: `Revise content`
+  - Good: `Rewrite Academic Integrity page to clarify citation requirements and reduce redundancy`
+  - Good: `Add Data Protection 101 article with examples for each classification level`
 
 ### Branching
 

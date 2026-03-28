@@ -8,12 +8,12 @@ This guide outlines how to use artificial intelligence (AI) tools at BYU-Idaho i
 
 **Is the AI tool you plan to use approved by the AI Committee?** See Approved Tools (link to approved-tools) for a current list of approved AI tools.
 
-- **No** -- [Submit a request](https://td.byui.edu/TDClient/79/ITHelpCenter/Requests/TicketRequests/NewForm?ID=fjIS982DLS0_&RequestorType=Service&SIDs=115) for approval. Unapproved AI tools may be used only if no private or institutional data is involved. Be cautious -- unknown tools can pose security risks, especially when linked to your BYUI account.
+- **No** -- [Submit a request](https://td.byui.edu/TDClient/79/ITHelpCenter/Requests/TicketRequests/NewForm?ID=905&RequestorType=Service) for approval. Unapproved AI tools may be used only if no private or institutional data is involved. Be cautious -- unknown tools can pose security risks, especially when linked to your BYUI account.
 - **Yes** -- Proceed to Step 2.
 
 ## Step 2: What type of data will you put into the AI tool?
 
-See the [CES Data Classification Policy](https://webmailbyui.sharepoint.com/sites/Policies/SitePages/Data%20Classification.aspx) for more information.
+See the [Data Privacy](/genai/privacy) page for more information on data classification levels.
 
 ### Public Data
 
