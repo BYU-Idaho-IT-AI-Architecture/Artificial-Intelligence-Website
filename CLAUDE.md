@@ -17,7 +17,10 @@ This repository manages the content overhaul of BYU-Idaho's Artificial Intellige
 BYUI-GenAI-Site/
 ├── .claude/
 │   ├── reference-docs/
-│   │   └── data-classification-policy.md
+│   │   ├── data-classification-policy.md
+│   │   ├── landing-pages.md
+│   │   ├── objectives.md
+│   │   └── strategy.md
 │   └── settings.local.json
 ├── .gitignore
 ├── CHANGELOG.md
@@ -68,7 +71,7 @@ BYUI-GenAI-Site/
 
 - Graphics, colors, fonts, styles, anything visual/artistic
 - Brightspot CMS implementation (University Communications handles publishing)
-- Student-facing content (future phase)
+- Student-facing content beyond the Learning with AI landing page (deeper student resources are a future phase)
 
 ### Target Audience
 
@@ -82,9 +85,10 @@ Employees only (faculty, administrative staff, and staff). Student content will 
 - **Front door:** All requests route through the IT Help Center, decisions made by a cross-functional governance committee
 - IT does NOT own academic policy (syllabus requirements, grading with AI, academic integrity)
 
-### Academic Content
+### Academic Content (under Teaching with AI)
 
-- Academic policy pages (AI in Academics, Academic Integrity, AI in the Syllabus, Grading with AI) are maintained on this site for now
+- The "Academics" section has been renamed to "Teaching with AI" to better reflect its faculty-centric, practical focus. The folder is still `Academics/` on disk (rename is a separate task).
+- Academic policy pages (AI in Academics, Academic Integrity, AI in the Syllabus, Grading with AI) are maintained on this site under Teaching with AI for now
 - Updates to academic content require collaboration with academic stakeholders -- do not unilaterally rewrite academic policy
 - These pages may move to a different home in the future
 
@@ -101,7 +105,7 @@ See `Website/navbar.md` for the source of truth. Summary:
   - Managing Context (`Best-Practices/managing-context.md`)
 - Learn About AI (`Learn-About-AI/learn-about-ai.md`)
   - How LLMs Are Trained (`Learn-About-AI/how-llms-are-trained.md`)
-- Academics (`Academics/academics.md`)
+- Teaching with AI (`Academics/academics.md`)
   - AI in Academics (`Academics/ai-in-academics.md`)
   - Academic Integrity (`Academics/academic-integrity.md`)
   - AI in the Syllabus (`Academics/ai-in-the-syllabus.md`)
@@ -143,6 +147,12 @@ See `Website/navbar.md` for the source of truth. Summary:
 - Each tool has data classification levels and a link to its access guide
 - IT Help Center callout for tool requests is prominent
 - Access guides in Resources/ folder: chatgpt.md, copilot.md, gemini.md
+
+### Teaching with AI (formerly Academics)
+
+- Landing page (`Academics/academics.md`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.md`)
+- Faculty-centric audience -- language should speak directly to instructors and their teaching context
+- Policy subpages (AI in Academics, Academic Integrity, AI in the Syllabus, Grading with AI) remain as children
 
 ### AI in Academics
 
@@ -195,6 +205,18 @@ See `Website/navbar.md` for the source of truth. Summary:
 - Data Usage Guide (`data-usage-guide.md`): step-by-step decision guide for AI data usage
 - Copyright (`copyright.md`): largely accurate -- clean up and polish; legal content is time-sensitive
 
+### Working with AI
+
+- Landing page (`Working-with-AI/working-with-ai.md`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection, AI Priorities & Strategy, Ethics), Training Resources (tutorials and best practices), and Available Tools (link to `Resources/approved-tools.md`)
+- Employee-centric audience (staff and administrative employees) -- language should speak to day-to-day work applications
+- Getting Started subpage: practical onboarding guide for employees new to AI tools
+
+### Learning with AI
+
+- Landing page (`Learning-with-AI/learning-with-ai.md`) should organize image cards under three section headings per `.claude/reference-docs/landing-pages.md`: Topics & Standards (Data Protection and Ethics -- note: no AI Priorities & Strategy for students), Training Resources (student-specific tutorials), and Available Tools
+- Student-centric audience -- language should speak directly to students and their academic context
+- Deeper student resources are a future phase; for now this is a landing page only
+
 ## Editorial Principles
 
 - **Cut aggressively:** When content is outdated, inaccurate, or confusing, remove it. Err on the side of less content, not more.
@@ -206,10 +228,15 @@ See `Website/navbar.md` for the source of truth. Summary:
 
 ## Project Knowledge
 
-To the best of your ability, use the following knowledge to help you author the content:
+Reference documents in `.claude/reference-docs/` provide authoritative context for content decisions. Read the relevant document before writing or revising content in its domain.
 
-- For content pertaining to **data classification**, use the following knowledge:
-  - Leadership has elected to use a modified classification system for GenAI tools, based on the BYU-Idaho Data Classification Policy (see `.claude/reference-docs/data-classification-policy.md`)
+- **AI Strategy** (`.claude/reference-docs/strategy.md`): BYU-Idaho's institutional AI strategy as defined by university leadership -- critical requirements, priorities to support students, and enabling workstreams. Use as background context that informs the purpose and tone of all site content. Content should support the strategic priorities (prophetic guidance alignment, data privacy, advancing knowledge, workforce readiness, student support) without quoting them verbatim. When a content decision could go multiple directions, favor the direction that better serves the strategy.
+
+- **Governance Objectives** (`.claude/reference-docs/objectives.md`): Five objectives defined by AI Governance that this website must serve: Informed Leadership, Clear Governance, Clear Rules, Proactive Sharing, and Communication Hub. Use as a content decision filter -- before writing or revising any page, consider which objective(s) the content supports. If a page doesn't clearly serve at least one objective, question whether the content belongs on the site.
+
+- **Landing Page Structure** (`.claude/reference-docs/landing-pages.md`): Defines audience-specific landing page structure for the three audience landing pages (Teaching with AI, Working with AI, Learning with AI). Reference when creating or revising any audience landing page. Each landing page should organize image cards under three section headings: Topics & Standards, Training Resources, and Available Tools.
+
+- **Data Classification** (`.claude/reference-docs/data-classification-policy.md`): BYU-Idaho's official data classification policy and the modified classification system leadership has adopted for AI tools. Reference when writing content about data privacy, data handling, or tool-specific data classification levels.
 
 ## Workflow
 
@@ -226,7 +253,7 @@ To the best of your ability, use the following knowledge to help you author the 
 | home.md | Site homepage |
 | navbar.md | Navigation structure (source of truth) |
 | footer.md | Site footer content |
-| Academics/academics.md | Academics landing page |
+| Academics/academics.md | Teaching with AI landing page (faculty audience) |
 | Academics/ai-in-academics.md | Academic stakeholder review required |
 | Academics/academic-integrity.md | Academic stakeholder review required |
 | Academics/ai-in-the-syllabus.md | Academic stakeholder review required |
@@ -287,7 +314,7 @@ Track content authoring status here. Update as pages are completed.
 | Home | Draft complete | Rewritten per directives |
 | Navbar | Draft complete | Updated navigation structure with file paths |
 | Footer | Draft complete | IT contact info |
-| Academics landing | Draft complete | Image cards linking to subpages |
+| Teaching with AI landing | Draft complete | Image cards linking to subpages (needs restructuring per landing-pages.md) |
 | AI in Academics | Baseline copied | Requires academic stakeholder review |
 | Academic Integrity | Baseline copied | Requires academic stakeholder review |
 | AI in the Syllabus | Baseline copied | Requires academic stakeholder review |
@@ -302,9 +329,9 @@ Track content authoring status here. Update as pages are completed.
 | Data Privacy | Baseline copied | Not yet rewritten |
 | Data Usage Guide | Draft complete | Step-by-step decision guide for AI data usage |
 | Copyright | Baseline copied | Not yet rewritten |
-| Working with AI landing | Draft complete | Landing page for staff/admin employees |
+| Working with AI landing | Draft complete | Landing page for staff/admin employees (needs restructuring per landing-pages.md) |
 | Getting Started with AI | Draft complete | Employee guide covering tool access, use cases, data basics |
-| Learning with AI landing | Draft complete | Landing page for students |
+| Learning with AI landing | Draft complete | Landing page for students (needs restructuring per landing-pages.md) |
 | Approved Tools | Draft complete | Includes access guides (chatgpt/copilot/gemini.md), other tools acknowledgment |
 
 ## Git

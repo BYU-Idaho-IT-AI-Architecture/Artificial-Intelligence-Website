@@ -7,8 +7,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Reference documents for AI strategy, governance objectives, and landing page structure in `.claude/reference-docs/`
+- Project Knowledge section in CLAUDE.md with rules for referencing all four reference documents (strategy, objectives, landing pages, data classification)
+- Per-page directives for Teaching with AI, Working with AI, and Learning with AI landing pages with audience-specific structure (Topics & Standards, Training Resources, Available Tools)
 - NOTES.md document specifically for the web dev team publishing to Brightspot CMS (explaining how to use the repo, reading Markdown, navigation, etc.)
    - *This file DOES not get included on the website. It's simply a reference document for the web dev team*
+
+### Changed
+- Renamed "Academics" section to "Teaching with AI" throughout CLAUDE.md to reflect faculty-centric, practical focus (folder rename on disk is a separate task)
+- Softened student content scope -- Learning with AI landing page is in scope; deeper student resources remain future phase
 - Project repository initialized
 - CLAUDE.md with project overview, governance model, site structure, per-page directives, editorial principles, and workflow
 - Design document: docs/plans/2026-02-26-claude-md-design.md
