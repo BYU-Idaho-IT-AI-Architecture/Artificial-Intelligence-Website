@@ -71,7 +71,7 @@ If your account already has an active session, you may be taken directly to the 
 ## Troubleshooting
 
 **I accidentally logged in with a personal Microsoft account.**
-Click your profile picture → Sign out, then log in again using <username@byui.edu>.
+Click your profile picture → Sign out, then log in again using `username@byui.edu`.
 
 **Copilot is telling me my organization doesn’t allow this service.**
 Your BYUI Microsoft account may have an issue — contact the BYU‑Idaho Help Desk.

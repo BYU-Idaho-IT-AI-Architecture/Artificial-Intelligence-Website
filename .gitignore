@@ -7,3 +7,8 @@
 # Docx exports
 export/
 ai-website-content-*.zip
+
+# Docusaurus preview site
+preview-site/node_modules/
+preview-site/build/
+preview-site/.docusaurus/

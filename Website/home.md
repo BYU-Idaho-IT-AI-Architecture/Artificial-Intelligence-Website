@@ -1,6 +1,7 @@
 ---
 url: "https://www.byui.edu/genai/"
 title: "Artificial Intelligence"
+slug: /
 ---
 
 # Artificial Intelligence
